@@ -1,0 +1,18 @@
+*,
+*::before,
+*::after 
+{
+    margin: 0;    
+    box-sizing: border-box;
+} 
+
+
+ html, body {    
+    font-size:16px;
+    font-family:$font-inter;
+    font-weight: $font-weight-regular-400;
+    color: $colour-black; 
+    
+    
+
+}
