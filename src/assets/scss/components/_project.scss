@@ -1,0 +1,115 @@
+.project{
+    margin-top: 120px;
+
+
+    
+    .container{
+        .project-upp{
+
+            margin-bottom: 100px;
+            
+            @media (min-width:992px) {              
+              text-align: start;
+              margin-left: 190px;
+              margin-right: 100px;
+            }
+ 
+            @media (min-width:1200px) {              
+                text-align: center;
+                margin-left: auto;
+              }
+
+            .red-text{
+                margin-bottom: 33px;
+            }
+        }
+
+        .project-grid{
+            display: grid;
+            grid-template-columns: 1fr; //mobile first!!
+            gap: 30px;
+
+            @media (min-width:768px) {
+                grid-template-columns: 1fr 1fr;
+                               
+            }
+
+            /* Hans Mattin mönster -->  display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto 1fr auto;
+
+        grid-template-areas: "header"
+                                "main"
+                                "footer";
+
+        header { grid-area: header;}
+        main {grid-area:main; text-aligh:center; margin-top: 20px; }
+        footer {grid-area:footer;}
+ */
+
+            .article{
+                display: grid;
+                grid-template-columns: 1fr;
+                grid-template-rows: auto 1fr auto;
+            
+                img{
+                    width: 100%;
+                    height: auto;
+                }
+
+                h3{
+                    font-family: $font-dm-sants;
+                    font-weight: $font-weight-bold-700;
+                    font-size: 1.375rem;
+                    padding-top: 35px;
+                    padding-bottom: 16px;
+                    border-bottom: 2px solid $colour-black-op10;
+                }
+
+                a{
+                    padding:15px;
+                    margin-right: 15px;
+                    display: block;
+                    text-align: right;
+                    font-family: $font-inter;
+                    font-size: 0.875rem;
+                    font-weight: $font-weight-medium-500;
+                    color: $colour-black-op70;
+
+                    &:hover{
+                        text-decoration: underline;
+                    }
+                    
+                    i{
+                        margin-left: 5px;
+                    }
+
+                }
+            }        
+
+        }
+
+        .project-btn {
+            
+            margin-top: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+           
+          
+           margin-bottom: 90px; //Adobe 92
+
+            .button-black{
+                width: 100%;
+                
+
+                @media (min-width:992px) {
+                    width: auto;
+
+                }
+            }    
+
+        }
+    }
+ } 

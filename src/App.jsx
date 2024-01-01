@@ -8,12 +8,16 @@ import Service from './views/Service';
 import Login from './views/Login'; 
 import NotFoundPage from './views/NotFoundPage';
 import NavSection from './componens/NavSection';
+import AutoScrollToTop from './componens/Generics/AutoScrollToTop';
+import ScrollToTop from './componens/Generics/ScrollToTop';
+
 
 function App() {
   
   return (
     <>
-
+<AutoScrollToTop/>
+    <ScrollToTop/>     
     <NavSection/>
       <Routes>     
       

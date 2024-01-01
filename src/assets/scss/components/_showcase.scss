@@ -1,0 +1,94 @@
+.showcase{
+    background-color: $colour-beige;
+    position:relative;
+    z-index: 0;
+
+    .container{
+        display: flex;
+        justify-content: space-between;        
+        padding-bottom: 50px;               
+        padding-top: 80px;
+        align-items: center;
+
+        @media (min-width:1200px) {
+            padding-top: 0;
+            padding-bottom: 0;
+          
+        }
+
+        .showcase-info{
+            .showcase-title{
+                font-family: $font-dm-sants;
+                font-size: 52px;
+                font-weight: $font-weight-bold-700;
+                
+                @media (min-width:992px) {
+                    font-size:62px;
+                                   
+                }
+                @media (min-width:1200px) {
+                    font-size:84px;           
+                } 
+            }
+            
+            
+            
+            .showcase-paragraph{
+                font-size: 20px;
+                font-family: $font-inter;
+                color: $colour-black-op70;
+                font-weight: $font-weight-regular-400;
+                margin: 15px 0 40px;
+            }
+
+                
+            .showcase-btn{
+                margin: 50px 0 0;
+                z-index: 1;
+                display:grid;
+
+                @media (min-width:992px) {
+                    display: inline;
+                    
+                }
+
+                .button-yellow{
+                    margin:0 0 20px;
+                    text-align: center;
+
+                    @media (min-width:992px) {
+                        margin:0 10px 0 0;
+                    }
+                }
+                .button-beige{
+                    text-align: center;
+                }
+            }
+        }
+
+        .showcase-img{
+            margin:80px -50px auto auto;
+            display:none;
+
+            @media (min-width:1200px) {
+                display: inline;
+                
+            }
+        }       
+    }
+    .simple-line{
+        position: absolute;
+        bottom:0;
+        z-index: -2;
+        display:none;
+        
+        @media (min-width:992px) {
+            display: inline;
+        }
+    
+
+
+    }
+
+
+}

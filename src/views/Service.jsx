@@ -1,8 +1,24 @@
 //import React from 'react'
+import Footer from '../componens/Footer'
+import OurService from '../componens/OurService'
+import BreadCum from '../componens/BreadCum'
+
+
 
 const Service = () => {
   return (
-    <div>Service</div>
+    < >
+     
+     <BreadCum  title="Services"/>   
+    <main>
+    <OurService/>
+      
+
+    </main>
+     
+     <Footer/>
+
+  </>
   )
 }
 

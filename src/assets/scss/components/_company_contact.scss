@@ -1,0 +1,79 @@
+.company-contact{
+    margin-top: 120px;
+    margin-bottom: 80px;
+    
+
+    .container{
+    
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        gap: 20px;
+
+        @media (min-width:992px) {
+            flex-direction: row;
+        }
+    
+    
+        .box-item{
+            border: 1px solid $colour-black-op10;
+            display: flex;
+            width: 420px;
+            justify-content: center;
+            gap: 30px;
+            padding: 50px 0;
+
+            .icon{
+
+                border-radius:50%; 
+                border: 1px solid $colour-blur;
+                background-color: $colour-black;
+                height: 40px;
+                width: 40px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                    @media (min-width:768px) {
+                        
+                        height: 60px;
+                        width: 60px;
+                        
+                    }
+                
+
+                i{
+                    color: $colour-white;
+                    font-size: 15px;
+
+                    @media (min-width:768px) {
+                        font-size: 20px;
+                    }
+                }
+
+            }
+
+            .text-content{
+
+                h3{
+                    font-size: 22px;
+                    font-family: $font-dm-sants;
+                    font-weight: $font-weight-bold-700;
+                    margin-bottom: 30px;
+                }
+
+                p{
+                    font-size: 1.125rem;
+                     font-family: $font-inter;
+                     font-weight: $font-weight-regular-400; 
+                     color: $colour-black-op80;                   
+                 } 
+            }
+
+        }
+    
+    }
+
+
+}

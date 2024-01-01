@@ -1,0 +1,122 @@
+.news-form {
+    margin-top: 160px; 
+    background-color: $colour-beige;
+    padding-top: 115px; 
+    padding-bottom: 115px;
+    position: relative;
+    
+    img {
+        position: absolute;
+        right: 0;
+        bottom: 50px;
+        display: none;
+
+        @media (min-width:1320px) {
+            display: inline-block;
+        }
+        
+    }
+
+    .container{
+
+        h2{
+            margin-bottom: 20px;
+        }
+        
+        justify-content: space-between;
+        align-items: center;
+        gap: 20px;
+        
+        @media (min-width:992px) {
+            display: flex;
+        }
+
+        form {
+           
+            .form-bit {
+                display: flex;
+                text-align: center;
+               
+               
+                flex-direction: column;
+                gap: 9px;
+                margin-bottom: 20px;
+    
+                label {
+                    font-family: $font-dm-sants;
+                    margin-left: 20px;
+                    margin-bottom: 10px;
+                    text-align: start;
+    
+                }
+
+                .error{
+                    
+                    margin-left: 25px;
+                    margin-bottom: 8px;
+                    color: $colour-red;
+                    font-weight: $font-weight-regular-400;
+                }
+
+                .success{
+                    font-family: $font-dm-sants;
+                    margin-left: 25px;
+                    margin-bottom: 8px;
+                   
+                    color:$colour-green;
+                    font-weight: $font-weight-regular-400;
+                }
+
+                input{
+                    
+                    border-radius: 25px;
+                    height: 56px;
+                    margin-bottom: 15px;
+                    padding-left: 20px;                 
+                    text-align: center;
+
+                }
+
+                .finput-error{
+                    color:$colour-red;
+                    border: 1px solid $colour-red;
+                    background-color: $colour-red-backgr;
+                    outline: $colour-red;
+                }
+
+                .finput-success{
+                    
+                    color:$colour-green;
+                    border: 1px solid $colour-green;
+                    outline: $colour-green;
+                    background-color: $colour-green-backgr;
+                }
+    
+               
+              
+            }
+            .button-yellow{
+                           
+                text-align: center;
+                width: 100%;
+               
+                @media (min-width:992px) {
+                            
+                    padding: 15px 30px 10px;
+                    width: 296px;
+                    display: inline-block;
+                }
+
+                @media (min-width:1200px) {
+                            
+                    padding-left:73px ;
+                    padding-right:73px ;
+                    width: auto;
+                   
+                }
+
+            }
+        }
+    }
+    
+}

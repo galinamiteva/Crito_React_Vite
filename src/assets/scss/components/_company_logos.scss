@@ -1,0 +1,14 @@
+.company_logos{
+    .container{
+        display: none;
+        justify-content: space-between;
+        align-items: center;
+        margin: 70px auto;
+       
+
+        @media (min-width:1200px) {
+            display:flex
+        }
+
+    }
+}

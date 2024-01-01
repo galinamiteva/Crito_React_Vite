@@ -1,0 +1,124 @@
+
+
+.contact-us {
+    padding-bottom: 120px;
+    .container {
+        
+        display: flex;
+        flex-direction: column;        
+        background-color: $colour-beige;
+        text-align: center;
+        align-items: center;
+        padding-bottom: 130px;
+        padding-top:100px;
+
+
+        .contact-content{
+            
+            width: 80%;
+            .title-form {           
+
+                h2 {
+                    margin-bottom: 50px;
+                    font-size: 35px;
+    
+                    @media (min-width: 1200px) {
+                        font-size: 45px;
+                        
+                    }
+                }
+            }
+            
+            .content-box{
+                
+                
+
+
+                .form-bit {
+                    display: flex;
+                    text-align: center;
+                   
+                   
+                    flex-direction: column;
+                    gap: 9px;
+                    margin-bottom: 20px;
+
+
+                    label {
+                        font-family: $font-dm-sants;
+                        margin-left: 20px;
+                        margin-bottom: 10px;
+                        text-align: start;
+        
+                    }
+
+                    .error{
+                        
+                        margin-left: 25px;
+                        margin-bottom: 8px;
+                        color: $colour-red;
+                        font-weight: $font-weight-regular-400;
+                    }
+    
+                    .success{
+                        font-family: $font-dm-sants;
+                        margin-left: 25px;
+                        margin-bottom: 8px;
+                       
+                        color:$colour-green;
+                        font-weight: $font-weight-regular-400;
+                    }
+    
+                    .finput-error{
+                        color:$colour-red;
+                        border: 1px solid $colour-red;
+                        background-color: $colour-red-backgr;
+                        outline: $colour-red;
+                    }
+    
+                    .finput-success{
+                        
+                        color:$colour-green;
+                        border: 1px solid $colour-green;
+                        outline: $colour-green;
+                        background-color: $colour-green-backgr;
+                    }
+        
+                   
+                    input, textarea{
+                        
+                        border-radius: 25px;
+                        height: 56px;
+                        margin-bottom: 15px;
+                        padding-left: 20px;
+                        
+        
+
+                    }
+        
+                    #message{
+                        padding-top: 15px;
+                        height: 160px;
+                        padding-bottom: 45px;
+                        
+                        border-radius: 25px;
+                       
+                        margin-bottom: 15px;
+                        padding-left: 20px;
+                        
+
+                        }
+        
+                   
+                                       
+                }
+                button{
+                    text-align: center;
+                    width: 100%;
+                }
+            }
+        }
+
+
+    }
+}
