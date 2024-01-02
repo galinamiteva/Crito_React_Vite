@@ -1,4 +1,7 @@
-.article-news {
+.news-and-articles-detail {
+
+    background-color: #F0EFE9;
+    padding-bottom: 100px;
 
     .container {
 
@@ -23,12 +26,16 @@
                 @media (min-width: 1200px) {
                     padding: 12px 9px;
                     margin-top: 120px;
+                    margin-right: 10px;
                 }
             }
 
 
             .section-title {
                 padding-bottom: 30px;
+                @media (min-width: 1200px) {
+                    margin-left: 10px;
+                }
             }
 
         }
@@ -40,7 +47,6 @@
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
-                align-items: center;
             }
 
             @media (min-width: 992px) {
@@ -48,23 +54,13 @@
             }
 
             .article-content {
-                width: 100%;  
-                padding: 10px;
-                margin: 20px;
+                width: 100%;
+                margin-right: 10px;
+                margin-left: 10px;
+                margin-bottom: 10px;
+                padding: 5px;
                 transition: background-color 0.3s ease-in-out, color 0.15s ease-in-out, box-shadow 0.2s ease-in-out;
                 box-shadow: 7px 7px 7px 2px #8a898986;
-
-                @media (min-width: 576px) {
-                    height: 500px;
-                }
-
-                @media (min-width: 992px) {
-                    height: 450px;
-                }
-
-                @media (min-width: 1200px) {
-                    height: 550px;
-                }
     
                 &:hover {
                     box-shadow: 3px 3px 3px 2px #8a898986;
@@ -76,19 +72,20 @@
                 } 
 
                 .img-fluid {
-                    width: 100%;                 
+                    width: 100%;
+                    height: 400px;
                     padding-bottom: 10px;
 
-                    @media (min-width: 576px) {
-                        height: 350px;
-                    }
-
                     @media (min-width: 992px) {
-                        height: 200px;
+                        height: 300px;
                     }
 
                     @media (min-width: 1200px) {
-                        height: 300px;
+                        
+                    }
+
+                    @media (min-width: 992px) {
+                        
                     }
                 }
 
@@ -119,5 +116,6 @@
             }
 
         }
+
     }
 }
